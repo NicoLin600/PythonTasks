@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 # this is the first comment
 # this is the second one
 
@@ -52,3 +54,19 @@ tup1 = ()    # empty tuple
 tup2 = (20,) # a tuple includes one element, there must be a comma at the end of this element
 set_a = {'Tom', 'Jim', 'Mary', 'Tom', 'Jack', 'Rose'}
 dict_a = {'name': 'python','code':1, 'site': 'www.python.com'}
+
+#######################################
+def a():
+    '''This is a comment of function a'''
+    pass
+print(a.__doc__)
+
+#######################################
+#Random
+if __name__ == "__main__":
+    import random
+    print("choice:"+ str(random.choice(range(0,101))))
+    # print("random:"+ str(random()))
+    # print("seed:"+ str(random.seed(666)))
+    # print("shuffle:"+ str(random.shuffle([1,2,3,4,5])))
+    print("uniform: %f" %random.uniform(0,101))
